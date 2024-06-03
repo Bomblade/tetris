@@ -258,32 +258,32 @@
 
 (def key-map
   [{:doc "Move Right"
-    :codes #{"ArrowRight" "KeyL"}
-    :keys ["L" "→"]
+    :codes #{"KeyD"}
+    :keys ["D"]
     :dispatch {:type :player-shift :direction :right}}
    {:doc "Move Left"
-    :codes #{"ArrowLeft" "KeyH"}
-    :keys ["H" "←"]
+    :codes #{"KeyA"}
+    :keys ["A"]
     :dispatch {:type :player-shift :direction :left}}
    {:doc "Soft Drop"
-    :codes #{"ArrowDown" "KeyJ"}
-    :keys ["J" "↓"]
+    :codes #{"KeyS"}
+    :keys ["S"]
     :dispatch {:type :player-shift-down :source :user}}
    {:doc "Rotate Right"
-    :codes #{"ArrowUp" "KeyK"}
-    :keys ["K" "↑"]
+    :codes #{"ArrowRight"}
+    :keys ["→"]
     :dispatch {:type :player-rotate :direction :right}}
    {:doc "Rotate Left"
-    :codes #{"KeyZ"}
-    :keys ["Z"]
+    :codes #{"ArrowLeft"}
+    :keys ["←"]
     :dispatch {:type :player-rotate :direction :left}}
    {:doc "HOLD"
-    :codes #{"KeyC"}
-    :keys ["C"]
-    :dispatch {:type :player-hold}}
-   {:doc "HARD DROP"
     :codes #{"Space"}
     :keys ["SPACE"]
+    :dispatch {:type :player-hold}}
+   {:doc "HARD DROP"
+    :codes #{"KeyW"}
+    :keys ["W"]
     :dispatch {:type :player-drop}}
    {:doc "Pause"
     :codes #{"Escape"}
